@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="https://blog.tednologia.com/wp-content/uploads/2020/03/php-2.png">
+    <title>Formulario</title>
+    <!-- Agrega los enlaces a los archivos CSS y JS de Bootstrap 5.1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1/dist/js/bootstrap.min.js"></script>
+    <style>
+        body{
+            background-image: url(https://d1.awsstatic.com/Developer%20Marketing/languages/net/NET%20Digital%20Library-2x.2003130c0a7d9323c4f01202b2c2450a61c8cf7c.png);
+        }
+    </style>
+</head>
+<body>
+        <!-- Barra de navegación (puedes reutilizar la que ya tienes) -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+        <img src="https://blog.tednologia.com/wp-content/uploads/2020/03/php-2.png" width="200px" class="d-inline-block align-top" alt="Logo PHP">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="TemaPhp.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="acerca.html">Acerca de</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" target="_blank" href="https://www.youtube.com/watch?v=G80KahjwGU8">Video</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="formulario.html">Contacto</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+    <div class="container mt-5">
+        <h1>CONTACTANOS PARA CUALQUIER DUDA.</h1>
+
+        <form>
+            <!-- Campo de texto para el nombre -->
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre">
+            </div>
+
+            <!-- Campo de correo electrónico -->
+            <div class="mb-3">
+                <label for="correo" class="form-label">Correo Electrónico:</label>
+                <input type="email" class="form-control" id="correo" placeholder="Escribe tu correo electrónico">
+            </div>
+
+            <!-- Casilla de verificación para suscripción -->
+            <!-- <div class="form-check mb-3">
+                <input type="checkbox" class="form-check-input" id="suscripcion">
+                <label class="form-check-label" for="suscripcion">Suscribirse al boletín</label>
+            </div> -->
+
+            <!-- Grupo de botones de opción para género -->
+            <div class="mb-3">
+                <label>Género:</label>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="genero" id="masculino">
+                    <label class="form-check-label" for="masculino">Masculino</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="genero" id="femenino">
+                    <label class="form-check-label" for="femenino">Femenino</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="genero" id="otro">
+                    <label class="form-check-label" for="otro">Otro</label>
+                </div>
+            </div>
+
+            <!-- Campo de texto para comentarios -->
+            <div class="mb-3">
+                <label for="comentarios" class="form-label">Comentarios:</label>
+                <textarea class="form-control" id="comentarios" rows="4"></textarea>
+            </div>
+
+            <!-- Botón de envío -->
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            <!-- Botón de regreso -->
+            <!-- <a href="TemaPhp.html" button type="submit" class="btn btn-outline-warning">Regregar</button> -->
+        </form>
+    </div>
+</body>
+</html>
